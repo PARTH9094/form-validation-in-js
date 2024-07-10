@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Page</title>
+
+  <style>
+    .signup {
+      background-color: white;
+      padding-right: 100px;
+      width: 50%;
+      margin: auto;
+      padding: 10px 50px;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+
+    .signup h2 {
+      font-weight: bold;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 38px;
+    }
+
+    .signup label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .signup input[type="text"],
+    .signup input[type="email"],
+    .signup input[type="password"],
+    .signup textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+
+    .signup button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #FFC107;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .signup button:hover {
+      background-color: #e0a800;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <form class="signup" id="signupForm" onsubmit="return validate()" action="success.html">
+    <h2>Sign Up Form</h2>
+    <label for="name">First Name</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Enter your First Name"><br>
+    <label for="name">Last Name</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Enter your Last Name"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter a valid email address"><br>
+    <label for="phone">Phone Number</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Enter a valid mobile number"><br>
+    <label>Enter Your Gender:</label>
+    <label for="Male"><input type="radio" id="male" name="gender" value="Male">Male</label>
+    <label for="Female"><input type="radio" id="female" name="gender" value="Female">Female</label>
+    <label for="Transgender"> <input type="radio" id="transgender" name="gender" value="Transgender">Transgender</label>
+    <label for="address">Enter Your Address</label>
+    <input type="text" id="address" name="Address" placeholder="Enter your address"><br>
+    <label for="Password">Enter Password</label>
+    <input type="password" id="password" placeholder="Please enter Password">
+    <label for="Password">Confirm Password</label>
+    <input type="password" id="cpassword" placeholder="Please Re-enter Your Password">
+
+
+    <button type="submit">SUBMIT</button>
+  </form>
+
+</body>
+<!-- 
+<script src="if_else.js"></script> -->
+
+<script src="script.js"></script>
+
+</html>

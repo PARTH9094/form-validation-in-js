@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfully Logged In</title>
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .message-box {
+            background-color: white;
+            padding: 20px 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .message-box h1 {
+            font-size: 24px;
+            color: #28a745;
+        }
+
+        .message-box p {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #FFC107;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-box">
+        <h1> Registration has been Successfully completed.</h1>
+        <p>Thank you for signing up! </p>
+        <button type="button" id="myButton">Click Here to Login</button>
+    </div>
+</body>
+
+
+<script>
+    document.getElementById("myButton").onclick = function () {
+        location.href = "login.html";
+    };
+</script>
+
+</html>
